@@ -1,0 +1,9 @@
+{
+  "name": "gzip-uncompressed-size-sjs",
+  "version": "1.0.0",
+  "private": true,
+  "dependencies": {
+    "gzip-uncompressed-size": "^1.0.0",
+    "source-map": "^0.5.6"
+  }
+}

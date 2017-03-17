@@ -6,7 +6,7 @@ import sbt._
 import scala.language.postfixOps
 
 val apiVersion = "1.0.0"
-val scalaJsIOVersion = "0.3.0.6"
+val scalaJsIOVersion = "0.3.0.7"
 val scalaJsVersion = "2.12.1"
 
 homepage := Some(url("https://github.com/scalajs.io/gzip-uncompressed-size"))

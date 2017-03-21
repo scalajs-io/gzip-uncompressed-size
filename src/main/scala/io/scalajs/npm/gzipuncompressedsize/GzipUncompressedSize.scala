@@ -17,7 +17,7 @@ trait GzipUncompressedSize extends js.Object {
     * @param path     the path to the compressed (.gz) file
     * @param callback the callback
     */
-  def fromFile(path: String, callback: js.Function2[Error, Int, Any]): Unit = js.native
+  def fromFile(path: String, callback: js.Function2[Error, Double, Any]): Unit = js.native
 
 }
 

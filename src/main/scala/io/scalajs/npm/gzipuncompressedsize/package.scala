@@ -18,8 +18,8 @@ package object gzipuncompressedsize {
   implicit class GzipUncompressedSizeEnrichment(val instance: GzipUncompressedSize) extends AnyVal {
 
     @inline
-    def fromFileAsync(path: String): Promise[Int] = {
-      promiseWithError1[Error, Int](instance.fromFile(path, _))
+    def fromFileAsync(path: String): Promise[Double] = {
+      promiseWithError1[Error, Double](instance.fromFile(path, _))
     }
 
   }

@@ -3,7 +3,7 @@ package io.scalajs.npm
 import io.scalajs.nodejs.Error
 import io.scalajs.util.PromiseHelper._
 
-import scala.concurrent.Promise
+import scala.concurrent.{Future, Promise}
 
 /**
   * gzip-uncompressed-size package object
@@ -18,7 +18,7 @@ package object gzipuncompressedsize {
   implicit class GzipUncompressedSizeEnrichment(val instance: GzipUncompressedSize) extends AnyVal {
 
     @inline
-    def fromFileAsync(path: String): Promise[Double] = {
+    def fromFileFuture(path: String): Future[Double] = {
       promiseWithError1[Error, Double](instance.fromFile(path, _))
     }
 

@@ -21,8 +21,8 @@ class GzipUncompressedSizeTest extends FunSpec {
       })
     }
 
-    it("reports the uncompressed size of a gzip file via promise") {
-      GzipUncompressedSize.fromFileAsync("./README.md.gz").future onComplete {
+    it("reports the uncompressed size of a gzip file via a Scala Future") {
+      GzipUncompressedSize.fromFileFuture("./README.md.gz") onComplete {
         case Success(uncompressedSize) =>
           info(s"uncompressedSize = $uncompressedSize")
         case Failure(e) =>
